@@ -1,0 +1,417 @@
+
+:root {
+    --main-color: #745cf9;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/* start Navbar */
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    font-size: 24px;
+    color: #666;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #4c4c4c !important;
+    transition: .3s;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--main-color);
+}
+
+.navbar-icon {
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.navbar-search {
+    position: absolute;
+    bottom: 130px;
+    right: 150px;
+    padding: 10px;
+    z-index: 55;
+    background-color: #fff;
+    transition: .5s;    
+}
+
+@media(max-width: 992px) {
+    .navbar-search {
+        display: none;
+    }
+}
+
+.navbar-icon:hover + .navbar-search {
+    bottom: -50px;
+}
+
+.navbar-search form input {
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+}
+
+.navbar-search form input:hover,
+.navbar-search form input:focus {
+    outline: 1px solid var(--main-color);
+}
+
+.navbar-search form button {
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 15px;
+}
+/* End Navbar  */
+
+/* start landing  */
+.landing {
+    height: calc(100vh - 74px);
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/landing.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing-content h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 40px;
+    }
+    .landing-content button {
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        
+    }
+}
+.landing-content p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.landing-content button, .seo button, .portfolio button, .parallax button, .limitless button, 
+.download button {
+    padding: 15px 40px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.landing-content button:first-of-type, .seo button, .portfolio button, .parallax button, 
+.limitless button, .download button {
+    background-color: var(--main-color);
+    transition: .4s;
+}
+.landing-content button:first-of-type:hover, .seo button:hover, .portfolio button:hover, 
+.parallax button:hover, .limitless button:hover, .download button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid var(--main-color);
+}
+
+.landing-content button:last-child {
+    color: #000;
+}
+.landing-content button:last-child:hover {
+    
+}
+/* end landing  */
+
+
+/* start SEO  */
+.seo {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.seo h2 {
+    font-weight: 400;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+@media (max-width: 1199px) {
+    .seo h2 {
+        margin-top: 20px;
+    }
+}
+.seo p {
+    font-size: 15px;
+    color: #8c979e;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+/* End SEO  */
+
+/* start portfolio  */
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+.portfolio h2 {
+    font-weight: 400;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+@media (max-width: 1199px) {
+    .portfolio h2 {
+        margin-top: 20px;
+    }
+}
+.portfolio p {
+    font-size: 15px;
+    color: #8c979e;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+/* end portfolio  */
+
+
+/* start parallex  */
+.parallax {
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(../images/parallex.jpg);
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+@media (max-width: 575px) {
+    .parallax {
+        height: auto;
+    }
+    .parallax h2 {
+        font-size: 30px;
+    }
+}
+
+.parallax h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+}
+@media (max-width: 575px) {
+    .parallax h2 {
+        font-size: 30px;
+    }
+}
+
+.parallax p {
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+/* end parallex  */
+
+/* start limitless */
+
+.limitless {
+    padding-top: 80px;
+    background-color: #f5f5f5;
+}
+
+.limitless h3 {
+    margin-bottom: 20px;
+}
+
+.limitless p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #8c979e;
+}
+/* end limitless */
+
+/* start latest-projects */
+
+.latest-projects {
+    padding-top: 80px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.latest-projects h2 {
+    margin-bottom: 20px;
+}
+.latest-projects p {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #8c979e;
+}
+.latest-projects .img-box > div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;    
+}
+
+.latest-projects .img-box img {
+    transform: scale(1.09);
+    transition: .4s;
+}
+
+.latest-projects .img-box .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.9));
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s;
+}
+.latest-projects .img-box > div:hover .overlay {
+    opacity: 1;
+}
+.latest-projects .img-box > div:hover img {
+    transform: scale(1.2);
+    filter: blur(3px);
+}
+/* end latest-projects */
+
+
+
+/* start testimonials  */
+.testimonials {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(../images/testimonial.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 500px;
+    color: #fff;
+}
+@media (max-width: 575px) {
+    .testimonials {
+        background-size: cover;
+        height: auto;
+    }
+}
+.testimonials h2 {
+    font-weight: 300;
+}
+.testimonials p {
+    font-size: 15px;
+}
+.testimonials img {
+    width: 120px;
+    height: 120px;
+}
+/* end testimonials  */
+
+/* start our-clients */
+.our-clients {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.our-clients h2 {
+    margin-bottom: 60px;
+}
+.our-clients img {
+    opacity: .3;
+    max-width: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+@media(max-width: 575px) {
+    .our-clients img {
+        max-width: 25%;
+        margin-bottom: 30px;
+    }
+}
+.our-clients img:hover {
+    opacity: 1;
+}
+/* end our-clients */
+
+/* start download  */
+.download {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+/* end download  */
+
+
+/* start footer  */
+footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #000;
+    color: #fff;
+}
+footer p {
+    font-size: 14px;
+}
+footer p a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+footer p a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+footer i {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+footer i:hover {
+    color: var(--main-color);
+}
+/* end footer  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
